@@ -106,7 +106,7 @@ if __name__ == '__main__':
 
     for dollar in range(1,60):  #gets all data from the S&P based on 1-60 thresholds
         df_events = find_events(ls_symbols, d_data, dollar)
-        dollar_name = str(dollar)
+        dollar_name = str(dollar + '.pdf')
         print "Creating Study" , dollar_name
         #graph_name = raw_input("name your graph, please: ")
         ep.eventprofiler(df_events, d_data, i_lookback=20, i_lookforward=20,
